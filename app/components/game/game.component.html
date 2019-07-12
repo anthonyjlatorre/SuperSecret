@@ -1,0 +1,81 @@
+<div class="container-fluid container1-custom">
+</div>
+
+<div class="container-fluid container-twotone">
+      <h1>{{q_.question}}</h1>
+  <hr>
+  <h3>{{q_.correct_answer}}</h3>
+  
+  <br>
+  <hr>
+  <div class="row justify-content-md-center">
+  <div class="col col-lg-8">
+  <h3>{{counter}}</h3>
+  <h1 id="questionDiv">{{theQuestion}}</h1>
+  </div>
+  </div>
+  <br>
+    <br>
+    <!-- <h3 *ngIf="show_answer">{{answers}}</h3> -->
+    <button [disabled]="disabled === true" class="btn btn-light" (click)="selection('btnOne')" id="btnOne"></button>
+    <br><hr>
+    <button [disabled]="disabled === true" class="btn btn-light" (click)="selection('btnTwo')" id="btnTwo"></button>
+    <br><hr>
+    <button  [disabled]="disabled === true" class="btn btn-light" (click)="selection('btnThree')" id="btnThree"></button>
+    <br><hr>
+    <button [disabled]="disabled === true"  class="btn btn-light" (click)="selection('btnFour')" id="btnFour"></button>
+    <br>
+
+    <br>
+    <p id="goBefore"></p>
+    </div>
+
+    <br>
+    <hr>
+    <button type="button" [hidden]="choicemade === false" class="btn btn-light" (click)="playAgain()" routerLink="/lobby" >Play Again?</button>
+
+    <div class="container-fluid container2-custom">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+
+          <!-- Set Username to the Username from the session storage -->
+          <input class="input-group input-group-lg form-control opacity" #username type="text" placeholder="Username" /> 
+          <br>
+          <input class="input-group input-group-lg form-control" *ngIf="show" (keypress) = isTyping() #message type="text" placeholder="Enter text..." />
+          <br>
+          <button class="btn btn-light" (click) = "sendMsg()"  (click)="saveAnswer()" #send >Send</button>
+          <br>
+          <hr>
+          <div #chatwindow>
+            <div #output></div> 
+            <div #feedback></div>
+        </div>
+        <br>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container2-custom col">
+ 
+     
+  </div>
+
+    
+
+    <ng-template id="tempID" #template>
+        <div class="modal-header modal-custom">
+          <h4 class="modal-title pull-left">Enter Your Answer</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body modal-custom">
+          <label for="answer_Input">Enter Your Answer</label>
+            <input #answer_ type="text" class="form-control" id="answer_Input" placeholder="Answer">
+            <br>
+            <button type="button" class="btn btn-light button-custom" (click)="getAnswer(answer_.value)" (click)="modalRef.hide()">Submit</button>
+        </div>
+      </ng-template>
+    
+
+<div class="container-fluid container2-custom">
+</div>

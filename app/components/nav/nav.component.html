@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg nav-gradient">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item active">
+        <button type="button" class="btn btn-light button-custom" routerLink='/home'>Home</button>
+      </li> -->
+      <li class="nav-item">
+          <button type="button" class="btn btn-light button-custom" routerLink='/login'>Login</button>
+        </li>
+        <!-- <li class="nav-item">
+          <button id="leaderboard_" [disabled]="disabled === true" type="button" class="btn btn-light button-custom" routerLink='/leaderboard' (click)="getLeaderboard()">Leaderboard</button>
+        </li> -->
+        <li class="nav-item">
+          <button id="play_game" [disabled]="disabled === true" type="button" class="btn btn-light button-custom" routerLink='/play'>Play Game</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-light button-custom" routerLink='/login' (click)='logOut()'>Logout</button>
+        </li>
+    </ul>
+  </div>
+</nav>
+

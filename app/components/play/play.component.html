@@ -1,0 +1,66 @@
+<div class="container-fluid container1-custom">
+</div>
+ 
+<div class="container-fluid container-twotone">
+  <!-- <button type="button" class="btn btn-light button-custom" (click)="openModalWithClass(template)">Host Game</button> -->
+  <button type="button" class="btn btn-light button-custom" routerLink='/lobby' (click)="getTokens()">Join Game</button>
+</div>   
+
+<div class="container-fluid container2-custom">
+    <div class="jumbotron jumbotron-fluid jumbo-nomarg">
+        <div class="container">
+          <h1 class="display-4">Instructions</h1>
+          <br>
+          <h3 class="display-5">General</h3>
+          <p class="lead">Falsehoods is a game where you either try to trick your opponent or guess the right answer depending on your role. At the start of a round, 
+            you will have a host and players. A question is provided and the players will then have a chance to submit a potential answer to that question. You can try to 
+            trick the host or make them laugh, either will earn you points. After answers are submitted, the host will make their selections and points will be provided 
+            accordingly. A new round may then begin.
+          </p>
+          <br>
+          <h3 class="display-5">Host</h3>
+          <p class="lead">As host, you will receive a game code that you can send to other players to join your game. Once everyone has joined your lobby, you may
+            begin your game. 
+          </p>
+             <p class="lead">At the start of the game, a question is presented. As host, you will wait for the other players to submit potential answers to the question. 
+               After those answers are submitted, the players answers as well as the correct answer will be revealed. It is then your task to select the correct answer to the
+               provided question. You may also select an answer that you find funny or enjoyable as well.
+             </p>
+             <p class="lead">After selecting your answer, the true answer will be revealed, along with who provided which fake answer. Points will be awarded as described below. You then have 
+               the option to begin another round or leave the game.
+             </p>
+             <br>
+             <h3 class="display-5">Player</h3>
+          <p class="lead">As a player, you can select to join a game. A host will have to provide you with a game code that you can then use to enter the host's game. Once you've 
+            joined the game, a question will be provided and you will have a chance to submit an answer. Either try to trick the host into choosing your answer, or try to go for Funny 
+            Points and make them laugh. After you submit your answer, wait for the host to make a decision. Points will be awarded as described below. The host may then start another round
+            or leave the game.
+          </p>
+          <br>
+          <h3 class="display-5">Points</h3>
+          <p class="lead">As host, you will receive points for guessing the correct answer from amongst the false ones. You may also choose a "best" answer to award points to. One point is earned 
+            for each correct guess.
+          </p>
+          <p class="lead">As a player, you will receive points for tricking the host or for having your answer chosen as the "best" answer. One point is earned for each.
+            </p>
+        </div>
+      </div>
+</div>
+
+<ng-template #template>
+    <div class="modal-header modal-custom">
+      <h4 class="modal-title pull-left">Game Code</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body modal-custom justify-content-center">
+        <p class="lead">{{gameCode}}</p>
+        <button type="button" class="btn btn-light button-custom" (click)='generateGC()'>Generate Game Code</button> 
+        <button type="button" class="btn btn-light button-custom" routerLink='/lobby' (click)="modalRef.hide()">Create Lobby</button>
+    </div>
+  </ng-template>
+
+<div class="container-fluid bg-fill"></div>
+
+  

@@ -1,0 +1,40 @@
+/* navbar */
+.navbar-custom {
+    background-color: rgb(224, 239, 241);
+    border: solid;
+    border: 3px;
+    border-color: rgb(76, 74, 83);
+}
+
+html{
+    border: solid;
+    border-color: rgb(48, 48, 53);
+}
+
+.container-border {
+    background-color:  rgb(48, 48, 53);
+    height: 5px;
+}
+
+.container1-custom {
+    background-color: rgb(158, 210, 240);
+    height: 300px;
+}
+
+.container2-custom {
+    background-color: rgb(188, 166, 228);
+    height: 500px;
+}
+
+.container-twotone {
+    background: linear-gradient(rgb(158, 210, 240) 0%,rgb(158, 210, 240) 50%,rgb(188, 166, 228) 50%,rgb(188, 166, 228) 100%);
+}
+
+.button-custom {
+    border: solid;
+    border-color: rgb(255, 174, 0);
+    border-radius: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 10px;
+}

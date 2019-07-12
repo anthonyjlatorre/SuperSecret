@@ -1,0 +1,60 @@
+<div class="container-fluid container1-custom">
+</div>
+
+<div class="container-fluid container-twotone">
+  <div class="jumbotron jumbotron-fluid jumbo-nomarg">
+    <div class="container">
+      <h1 class="display-4">Welcome to Falsehoods</h1>
+      <p class="lead">Please enter your login credentials.</p>
+      <label for="usernameInput">Enter Username</label>
+      <input #l_user type="text" class="form-control {{add_border}}" id="usernameInput" placeholder="Username">
+      <br>
+      <label for="passwordInput">Enter Password</label>
+      <input #l_pass type="password" class="form-control {{add_border}}" id="passwordInput" placeholder="Password">
+      <br>
+      <button type="button" id="janky" class="btn btn-light button-custom" (click)="doLogin(l_user.value, l_pass.value)" >Login</button>
+      <br>
+      <br>
+      <p class="lead">No Account? Create one here!</p>
+
+      <button type="button" class="btn btn-light button-custom" (click)="openModalWithClass(template)">Create Account</button>
+      <br>
+      <p class="lead">{{createAccountError}}</p>
+      
+    </div>
+  </div>
+    </div>
+ 
+<ng-template #template>
+  <div class="modal-header modal-custom">
+    <h4 class="modal-title pull-left">Create Account</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body modal-custom">
+      <label for="username_Input">Enter Username</label>
+        <input #username type="text" class="form-control" id="username_Input" placeholder="Username">
+        <br>
+        <label for="password_Input">Enter Password</label>
+        <input #user_Pass type="password" class="form-control" id="password_Input" placeholder="Password">
+        <br>
+        <label for="first_Name_Input">First Name</label>
+        <input #first_Name type="text" class="form-control" id="first_Name_Input" placeholder="First Name">
+        <br>
+        <label for="last_Name_Input">Last Name</label>
+        <input #last_Name type="text" class="form-control" id="last_Name_Input" placeholder="Last Name">
+        <br>
+        <label for="email_Input">Email</label>
+        <input #email type="email" class="form-control" id="email_Input" placeholder="Email">
+        <br>
+        <button type="button" class="btn btn-light button-custom" 
+          (click)='submitForm(username.value, user_Pass.value, first_Name.value, last_Name.value, email.value)' 
+          (click)="modalRef.hide()">Submit</button>
+  
+    </div>
+</ng-template>
+    
+
+<div class="container-fluid container2-custom">
+</div>

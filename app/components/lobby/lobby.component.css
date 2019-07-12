@@ -1,0 +1,134 @@
+.div-home {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.contentInside {
+  width: 100px;
+  height: 70px;
+  margin: 7px;
+  border: 1px solid black;
+  display: inline-flex;
+}
+
+.navbar-custom {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(224, 239, 241);
+  border: solid;
+  border: 3px;
+  border-color: rgb(76, 74, 83);
+}
+
+nav .navbar-nav li a {
+  color: rgb(197, 95, 0) !important;
+}
+
+html {
+  border: solid;
+  border-color: rgb(48, 48, 53);
+}
+
+.bg-fill {
+  background: 100%;
+  background-color: rgb(158, 210, 240);
+}
+.container-border {
+  background-color: rgb(48, 48, 53);
+  height: 5px;
+}
+
+.container1-custom {
+  background-color: rgb(158, 210, 240);
+  height: 50px;
+  margin: 0px;
+
+}
+
+.container2-custom {
+  background-color: rgb(188, 166, 228);
+  height: 500px;
+  margin: 0px;
+}
+
+.test {
+    background-color: aqua;
+    height: 100rem;
+}
+
+.container-twotone {
+  background-image: linear-gradient(
+    rgb(158, 210, 240) 0%,
+    rgb(188, 166, 228) 100%
+  );
+  height: 100rem;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+ .p-custom {
+    background: transparent  !important; 
+    white-space: normal;
+
+}
+
+.button-custom {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.button-custom:hover {
+    background: transparent;
+    color: aqua;
+    text-shadow: 1px 1px 2px blueviolet, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.button-custom:active :focus {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.modal-custom {
+  background-color: rgb(224, 239, 241);
+  border: solid;
+  border-color: rgb(48, 48, 53);
+}
+
+
+
+.bannerContainer {
+  position:relative; 
+  height:600px;
+  
+}
+.carousel {
+  position:absolute;
+  top:0;
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel,.item,.active{
+  height:100%;
+}
+.carousel-inner{
+   height:100%;
+}

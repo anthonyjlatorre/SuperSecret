@@ -1,0 +1,60 @@
+/* navbar */
+.navbar-custom {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(224, 239, 241);
+    border: solid;
+    border: 3px;
+    border-color: rgb(76, 74, 83);
+}
+
+nav .navbar-nav li a{
+    color: rgb(197, 95, 0) !important;
+    }
+
+html{
+    border: solid;
+    border-color: rgb(48, 48, 53);
+}
+
+.container-border {
+    background-color:  rgb(48, 48, 53);
+    height: 5px;
+}
+
+.container1-custom {
+    background-color: rgb(158, 210, 240);
+    height: 100px;
+}
+
+.container2-custom {
+    background-color: rgb(188, 166, 228);
+    height: 500px;
+}
+
+.nav-gradient {
+    background-image: linear-gradient(
+      to left bottom,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    );
+  }
+
+.container-twotone {
+    background: linear-gradient(rgb(158, 210, 240) 0%,rgb(158, 210, 240) 50%,rgb(188, 166, 228) 50%,rgb(188, 166, 228) 100%);
+}
+
+.button-custom {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+
+}

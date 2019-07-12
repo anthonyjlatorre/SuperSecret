@@ -1,0 +1,26 @@
+<pre>
+    1. Run ng serve if you have not yet
+    2. Split termrinal or create a new one and cd to src/app
+    3. Run node server.js (this file controls how our server responds).
+    4. Open up localhost:4200
+    5. The main files are html, ts for page functionality, and server.js for server config
+</pre>
+
+<canvas
+  #game
+  width="300"
+  height="220"
+  style="border: 1px solid black">
+</canvas>
+
+<p>
+  <button (click)="move('right')">Right</button>
+  <button (click)="move('left')">Left</button>
+  <button (click)="move('up')">Up</button>
+  <button (click)="move('down')">Down</button>
+</p>
+<br> <br>
+<h1 #direction ></h1>
+<button (click)="fill('down')">Down</button> <br>
+<p #hi></p>
+<br><br>
